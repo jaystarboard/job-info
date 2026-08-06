@@ -18,12 +18,20 @@
     main { display:grid; gap:14px; margin-top:-42px; padding:0 14px 42px; }
     .job-card { padding:23px 20px; border:1px solid rgba(37,61,137,.11); border-radius:22px; background:var(--paper); box-shadow:0 14px 38px rgba(28,49,104,.09); }
     .job-card.priority { border:2px solid #e0a51c; background:linear-gradient(180deg,#fffdf3,#fff); box-shadow:0 16px 42px rgba(177,126,7,.16); }
-    .priority-label { display:inline-block; margin:0 0 8px; padding:4px 9px; border-radius:999px; background:#fff0bd; color:#8b5b00; font-size:12px; font-weight:900; }
-    .recommend-label { display:inline-block; margin:0 0 8px; padding:4px 9px; border-radius:999px; background:#eef2f7; color:#526071; font-size:12px; font-weight:800; }
+    .job-card.spatial { background:linear-gradient(180deg,#effcf5,#fff); border-color:#55b988; }
+    .badges,.tech-tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+    .badges span { display:inline-block; padding:4px 9px; border-radius:999px; font-size:12px; font-weight:900; }
+    .priority-label { background:#fff0bd; color:#8b5b00; }
+    .recommend-label { background:#eef2f7; color:#526071; }
+    .spatial-label { background:#ccefdc; color:#12653c; }
+    .fit-label { background:#e5dcff; color:#5730a1; }
     .company { margin:0 0 5px; color:var(--brand); font-size:14px; font-weight:850; }
     h2 { margin:0; font-size:21px; line-height:1.35; letter-spacing:-.035em; }
     .meta { display:flex; flex-wrap:wrap; gap:7px; margin-top:14px; }
     .meta span { padding:5px 9px; border-radius:9px; background:#eef2ff; color:#405283; font-size:12px; font-weight:700; }
+    .tech-tags { margin-top:12px; margin-bottom:0; }
+    .tech-tag { padding:5px 9px; border:1px solid #ccd5ec; border-radius:999px; background:#fff; color:#33466f; font-size:12px; font-weight:750; }
+    .muted-tag { color:var(--muted); }
     .reason { margin:15px 0; color:var(--muted); font-size:14px; }
     a { display:flex; align-items:center; justify-content:space-between; min-height:48px; padding:12px 15px; border-radius:12px; color:#fff; background:var(--brand); font-size:15px; font-weight:800; text-decoration:none; }
     a:hover { background:#2947ad; }
@@ -39,619 +47,8 @@
     <p>서울·경기 · 프론트엔드 · 플랫폼 · 공간정보</p>
   </div></header>
   <main>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">레브잇</p>
-        <h2>[올웨이즈] Frontend Platform Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 관악구 남부순환로 1836, 7층, 8층</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/377536" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">레브잇</p>
-        <h2>[쇼포트] Product Engineer (Frontend)</h2>
-        <div class="meta">
-          <span>서울 서울 관악구 남부순환로 1836, 7층, 8층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/366548" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">포티투닷(42dot)</p>
-        <h2>Senior Data Visualization Developer (자율주행)</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 수정구 창업로40번길 20, A동 42dot </span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/366276" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">아이벡스</p>
-        <h2>Frontend Engineer (MLOps, Vision AI Platform)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 서초구 남부순환로356길 89(서초구 양재동 17-8)</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/363913" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">레브잇</p>
-        <h2>Sr. Software Engineer (Frontend)</h2>
-        <div class="meta">
-          <span>서울 서울 관악구 남부순환로 1836, 7층, 8층</span>
-          <span>경력 7~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/339834" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">레브잇</p>
-        <h2>Software Engineer (Frontend/3년이상)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 관악구 남부순환로 1836 7층, 8층</span>
-          <span>경력 2~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/339811" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">레브잇</p>
-        <h2>Software Engineer(Frontend) (병역특례(보충역))</h2>
-        <div class="meta">
-          <span>서울 서울 관악구 남부순환로 1836, 7층, 8층</span>
-          <span>경력 1~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/339807" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">아이알큐더스</p>
-        <h2>[개발] Senior 프론트엔드 개발자 (8년 ~)</h2>
-        <div class="meta">
-          <span>서울 서울 영등포구 국제금융로8길 2 농협문화복지재단 14층 (여의도동)</span>
-          <span>경력 8~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378890" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">마카롱팩토리(마이클)</p>
-        <h2>Platform Engineering (5년 이상)</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 분당구 대왕판교로644번길 49</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">플랫폼·시각화 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378889" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">세명소프트</p>
-        <h2>R&amp;D 개발 파트 AI/데이터 플랫폼 실무자</h2>
-        <div class="meta">
-          <span>서울 서울 중구 청계천로 100</span>
-          <span>경력 5~8년</span>
-          <span>2026-09-04 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">플랫폼·시각화 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378704" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">빗썸</p>
-        <h2>Frontend Engineer (빗썸페이)</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 테헤란로 124, 삼원타워 14~18F</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378492" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">몽구스에이아이</p>
-        <h2>Full Stack Developer</h2>
-        <div class="meta">
-          <span>경기 경기도 성남시 분당구 판교로 255번길 9-22, 우림W 시티</span>
-          <span>경력 0~35년</span>
-          <span>2026-09-30 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378371" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">피트크루</p>
-        <h2>웹 개발자 (리액트)</h2>
-        <div class="meta">
-          <span>서울 성동구 뚝섬로13길 38, KT&amp;G 상상플래닛 </span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378301" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">스탯</p>
-        <h2>Product Engineer (Frontend)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 언주로 622, 패스트파이브 3층</span>
-          <span>경력 3~100년</span>
-          <span>2026-09-29 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378192" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">동아사이언스</p>
-        <h2>[서비스개발센터] 프론트엔드 개발자 (6년 이상, 대리급)</h2>
-        <div class="meta">
-          <span>서울 서대문구 충정로 29 10층</span>
-          <span>경력 6~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378191" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">알엑스</p>
-        <h2>B2B SaaS 서비스 개발자(Full-Stack)</h2>
-        <div class="meta">
-          <span>서울 서울 마포구 마포대로 122, 프론트원 18층 1802호</span>
-          <span>경력 3~100년</span>
-          <span>2026-12-31 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378172" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">메리츠증권</p>
-        <h2>Full Stack Engineer (개발직)</h2>
-        <div class="meta">
-          <span>서울 서울 영등포구 국제금융로 10, Three IFC</span>
-          <span>경력 3~100년</span>
-          <span>2026-08-31 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/378159" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">오케이포스</p>
-        <h2>POS개발팀 프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 테헤란로87길 35 금강타워3 9층, 10층</span>
-          <span>경력 3~8년</span>
-          <span>2026-08-12 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/377750" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">라포랩스</p>
-        <h2>Frontend Chapter Leader</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로98길 8, KT&amp;G 코스모 대치타워</span>
-          <span>경력 7~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/377521" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">한국초저온</p>
-        <h2>물류시스템 개발자</h2>
-        <div class="meta">
-          <span>경기 경기도 평택시 오성면 오성산단1로 131 (주)한국초저온</span>
-          <span>경력 5~12년</span>
-          <span>2026-08-31 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/377486" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">이너버즈</p>
-        <h2>AI-Native Full-stack Product Engineer (Senior)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 남부순환로351길 19, 4층</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/377427" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">바딧</p>
-        <h2>시니어 프론트엔드 개발자 (5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 금천구 가산디지털1로 25 대륭테크노타운17차 906-2호</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/377326" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">휴이노</p>
-        <h2>Front-end SWE</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 압구정로 79길19, 3,4층</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/377066" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">에프앤에프(F&amp;F)</p>
-        <h2>디지털본부 프론트엔드 개발 5년 이상</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로8길 8, F&amp;F 빌딩</span>
-          <span>경력 5~100년</span>
-          <span>2026-08-31 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376981" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">퍼플아이오</p>
-        <h2>[코오롱몰] 커머스 웹 개발자 (7년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 테헤란로 445 본솔빌딩 3F</span>
-          <span>경력 7~14년</span>
-          <span>2026-08-31 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376823" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">디텍트</p>
-        <h2>풀스택 엔지니어 (Full Stack Engineer)</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 분당구 분당내곡로 117, 판교 그레이츠 4층</span>
-          <span>경력 8~16년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376739" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">오마이호텔앤코</p>
-        <h2>프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울시 종로구 종로 328 동대문빌딩 6층</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376723" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">미소(miso)</p>
-        <h2>Front-end Chapter Lead</h2>
-        <div class="meta">
-          <span>서울 종로구 율곡로6 트윈트리타워 B동 5층</span>
-          <span>경력 7~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376695" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">조코딩에이엑스파트너스</p>
-        <h2>FDE · 고객사 서비스 구축 · 제품 개발</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 사평대로55길 65-7, 1층, B1층</span>
-          <span>경력 1~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376185" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">인터웍스미디어</p>
-        <h2>프론트엔드 개발자 (6년 ~ 10년)</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 테헤란로 534, 30층(글라스타워)</span>
-          <span>경력 6~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376140" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">쿠팡</p>
-        <h2>Staff Frontend Engineer (Coupang Eats)</h2>
-        <div class="meta">
-          <span>서울 선릉역 부근 HJ타워</span>
-          <span>경력 7~14년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376128" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">한빛앤</p>
-        <h2>Product Engineer (Backend Focus)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 서대문구 연희로 2길 76 (창천동, 한빛빌딩)</span>
-          <span>경력 5~100년</span>
-          <span>2026-08-09 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376111" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">더게임</p>
-        <h2>프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 성동구 연무장5가길 7, W동 908호</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376106" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">보살핌</p>
-        <h2>프로덕트 엔지니어(Product Engineer)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 논현로 515, 아승빌딩 2층</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/376053" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">링크알파(LinqAlpha)</p>
-        <h2>Frontend Engineer, AI Agent Product</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 강남대로51길 1, 11층</span>
-          <span>경력 7~14년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/375849" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">키즈노트</p>
-        <h2>프론트엔트 개발자</h2>
-        <div class="meta">
-          <span>경기 경기도 성남시 분당구 판교역로 235 (H스퀘어, N동) 4층</span>
-          <span>경력 7~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/375746" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">일레븐</p>
-        <h2>프론트엔드 엔지니어 (Growth Frontend Engineer)</h2>
-        <div class="meta">
-          <span>경기 경기 용인시 수지구 광교중앙로 338, A동 828호</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/375692" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">위버스마인드</p>
-        <h2>Frontend Engineer 3년 이상</h2>
-        <div class="meta">
-          <span>서울 서울특별시 구로구 디지털로30길 28, 마리오타워 914호</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/375034" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">진이어스</p>
-        <h2>프론트 개발자 (5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 강남대로69길 10, 12~13층</span>
-          <span>경력 5~12년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/374920" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">퍼스트해빗</p>
-        <h2>프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 학동로33길 31, 패스워드 빌딩</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/374858" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">애자일소다</p>
-        <h2>AI Agent Platform Engineer</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 선릉로 525 인포스톰빌딩 3층</span>
-          <span>경력 3~100년</span>
-          <span>2026-08-31 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/374789" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">라포랩스</p>
-        <h2>Frontend Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로98길 8, KT&amp;G 코스모 대치타워</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/374712" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">쿤텍</p>
-        <h2>[NS사업그룹] 사이버 보안 프론트엔드 개발자 3~10년</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 수정구 창업로 54, LH기업성장센터 가동 609호</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/374401" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">인이지</p>
-        <h2>프론트엔드 개발자(선임~책임급)</h2>
-        <div class="meta">
-          <span>경기 경기도 성남시 분당구 성남대로331번길 8, 20층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/374289" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">로아이</p>
-        <h2>UX Engineer (Publisher)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로26길 14, 4-103</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/373991" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">브이픽셀</p>
-        <h2>CMS/API 서버 풀스택 개발자</h2>
-        <div class="meta">
-          <span>서울 서울특별시 내곡동 1-2025</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/373756" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">바비톡</p>
-        <h2>Frontend Engineer </h2>
-        <div class="meta">
-          <span>서울 서울특별시 서초구 강남대로363, 363타워 11층</span>
-          <span>경력 4~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/373568" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
+      <article class="job-card spatial">
+        <div class="badges"><span class="recommend-label">추천</span><span class="spatial-label">공간정보 추천</span><span class="fit-label">적합도 90%+ 추천</span></div>
         <p class="company">유모스원</p>
         <h2>Frontend Engineer (Fleet Management System)</h2>
         <div class="meta">
@@ -659,688 +56,44 @@
           <span>경력 4~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 100%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span><span class="tech-tag">WebGL</span><span class="tech-tag">실시간</span><span class="tech-tag">데이터 시각화</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
         <a href="https://www.wanted.co.kr/wd/373485" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">유모스원</p>
-        <h2>Frontend Engineer (TMS)</h2>
+        <div class="badges"><span class="recommend-label">추천</span><span class="fit-label">적합도 90%+ 추천</span></div>
+        <p class="company">바딧</p>
+        <h2>시니어 프론트엔드 개발자 (5년 이상)</h2>
         <div class="meta">
-          <span>서울 서울 서초구 서초대로77길 55, 위워크 신논현, 9층 유모스원</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/373484" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">유모스원</p>
-        <h2>Frontend Engineer (WMS)</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 서초대로77길 55, 위워크 신논현, 9층 유모스원</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/373483" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">에이지엘</p>
-        <h2>풀스택 개발자</h2>
-        <div class="meta">
-          <span>서울 서울시 광진구 아차산로392, JNC center 사옥 1-6층 </span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/373254" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">클로저랩스</p>
-        <h2>Foundation Engineer (Front-end) 3년 이상</h2>
-        <div class="meta">
-          <span>서울 서울 마포구 백범로31길 21, 7층 701호</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/372945" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">머진랩스</p>
-        <h2>프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로22길 16, 6층</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/372883" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">랩투마켓</p>
-        <h2>[전문연구요원 가능] 로봇 / 물류 자동화 플랫폼 개발 (웹개발, nodejs)</h2>
-        <div class="meta">
-          <span>경기 경기 고양시 덕양구 향기1로 51, 134호 랩투마켓</span>
-          <span>경력 0~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">플랫폼·시각화 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/372864" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">키노라이츠</p>
-        <h2>프론트엔드 개발자(5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로2길 27, 12층</span>
-          <span>경력 5~15년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/372415" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">스토어스토리</p>
-        <h2>개발팀 풀스택 리드 (5년 이상~)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로 217, 502호</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/372236" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">아르템코퍼레이션</p>
-        <h2>프론트엔드 개발자 (Frontend Developer)</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 사임당로8길 13</span>
-          <span>경력 3~100년</span>
-          <span>2026-09-30 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/372133" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">팀리미티드</p>
-        <h2>Software Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 성동구 상원12길 34, 서울숲에이원센터 801호</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/372120" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">아파트아이</p>
-        <h2>Front-end 개발자 (7년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 금천구 가산디지털1로 186 제이플라츠 1203호</span>
-          <span>경력 7~12년</span>
-          <span>2026-08-31 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/371924" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">팀리부뜨</p>
-        <h2>AI-Native Engineer (Frontend) (5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 강남대로53길 8, 8층 7호</span>
+          <span>서울 서울특별시 금천구 가산디지털1로 25 대륭테크노타운17차 906-2호</span>
           <span>경력 5~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 91%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/371270" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span><span class="tech-tag">실시간</span><span class="tech-tag">데이터 시각화</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/377326" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">팀리부뜨</p>
-        <h2>Forward Deployed Engineer (FDE) (3년 이상)</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">아이알큐더스</p>
+        <h2>[개발] Senior 프론트엔드 개발자 (8년 ~)</h2>
         <div class="meta">
-          <span>서울 서울 서초구 강남대로53길 8, 8층 7호</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/371269" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">에이든랩</p>
-        <h2>Full Stack Developer (React · Next.js · Go)</h2>
-        <div class="meta">
-          <span>서울 서울 마포구 마포대로 19, 14층 에이든랩</span>
-          <span>경력 5~15년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/371243" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">가제트코리아</p>
-        <h2>[개발팀] FE (React / TypeScript) (5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울시 강서구 마곡중앙5로 22, 9층</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/371140" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">오픈에이아이(OpenAI)</p>
-        <h2>Forward Deployed Engineer - Seoul</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 테헤란로 152 (역삼동, 강남파이낸스센터)</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/370620" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">룰루랩(lululab)</p>
-        <h2>풀스택 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 도산대로 318, 13층</span>
-          <span>경력 2~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/370499" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">비스텔리젼스</p>
-        <h2>Full Stack Engineer (FSE)</h2>
-        <div class="meta">
-          <span>서울 서울시 서초구 바우뫼로128 비스텔타워</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/370490" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">마카롱팩토리(마이클)</p>
-        <h2>프론트엔드 개발 (3년 이상)</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 분당구 대왕판교로644번길 49</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/370013" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">에이엠시지(AMCGCo.Ltd.)</p>
-        <h2>사업개발본부 Analog 회로 개발 담당자</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 강남대로 331, 광일프라자 14층</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/369712" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">로앤컴퍼니(lawtalk)</p>
-        <h2>슈퍼로이어 프론트엔드 개발자 (5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 법원로4길 11-6, 로앤컴퍼니빌딩</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/369552" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">카이헬스</p>
-        <h2>Sr. Software Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 서초대로 398, 7층</span>
-          <span>경력 8~100년</span>
-          <span>2026-09-18 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/369501" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">사이오닉에이아이</p>
-        <h2>Frontend Developer (3년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 남부순환로359길 29, 사이오닉에이아이</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/369391" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">창일</p>
-        <h2>불법주정차 단속 시스템 풀스택 개발자</h2>
-        <div class="meta">
-          <span>경기 경기 화성시 효행구 기안길 76-1, 창일</span>
-          <span>경력 4~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/368984" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">클로버추얼패션(CLOVirtualFashion)</p>
-        <h2>Frontend Developer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로 152</span>
-          <span>경력 3~12년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/368858" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">스타비젼</p>
-        <h2>Frond-End 개발 5년 이상</h2>
-        <div class="meta">
-          <span>서울 서울 강동구 올림픽로 560, 스타비젼 사옥</span>
-          <span>경력 5~13년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/368383" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">아슬론(Arslon)</p>
-        <h2>의료IT 풀스택 개발자 / 프로젝트 관리자</h2>
-        <div class="meta">
-          <span>서울 서울 강서구 마곡중앙8로 14, 507호</span>
-          <span>경력 1~20년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/368070" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">루트업</p>
-        <h2>골프장 통합 Saas 클럽매니저 백엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로5길 7, 강남역 위워크 9층</span>
-          <span>경력 6~13년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/367926" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">에이베러</p>
-        <h2>풀스택 개발자 - 디스터</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 강남대로 364, 12층 패스트파이브</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/367861" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">큐빅</p>
-        <h2>Sr. 프론트엔드 개발자(Frontend Engineer)</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 분당구 정자일로 95, 네이버1784</span>
-          <span>경력 5~12년</span>
-          <span>2026-08-31 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/367785" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">러쉬에잇(RushEight)</p>
-        <h2>[웹 개발] 클래식 메이플스토리 (아르테일) 풀스택 엔지니어 (3년+)</h2>
-        <div class="meta">
-          <span>서울 서울 구로구 디지털로 300</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/367396" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">누아</p>
-        <h2>프론트엔드 개발자 팀장</h2>
-        <div class="meta">
-          <span>서울 서울특별시 중구 세종대로 136, SFC 8층</span>
-          <span>경력 8~16년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/367207" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">씨제이올리브영(CJ올리브영)</p>
-        <h2>검색 플랫폼 개발자 (Front-end)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 용산구 한강대로 372, 24층 </span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/366991" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">케어랩스</p>
-        <h2>구인구직 플랫폼 풀스택 개발자 (5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 역삼로2길 16</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/366712" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">밸류앤플러스</p>
-        <h2>풀스택 개발자(Full Stack Developer)</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 도구로 119, 3층</span>
-          <span>경력 3~8년</span>
-          <span>2026-09-04 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/366607" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">오픈소스컨설팅</p>
-        <h2>웹 서비스 개발자</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 테헤란로83길 32(삼성동)</span>
-          <span>경력 5~13년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/366174" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">동선컴퍼니</p>
-        <h2>[동네선물 플랫폼] 풀스택 개발자</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 분당구 판교로289번길 20, 3동 1층 3호</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/365927" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">메디워크AI</p>
-        <h2>의료데이터 가공 플랫폼 풀스택 개발자 (4~6년)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로43길 8, 6층</span>
-          <span>경력 4~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/365487" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">스튜디오키코</p>
-        <h2>클라이언트 개발자(Electron)</h2>
-        <div class="meta">
-          <span>서울 서울 성동구 왕십리로 137, 119동 공공청사 1층</span>
-          <span>경력 3~15년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/365095" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">카카오헬스케어</p>
-        <h2>[계약직][AI Native EHR] Front-End Engineer</h2>
-        <div class="meta">
-          <span>경기 경기도 성남시 분당구 판교역로 166, 카카오판교아지트 B동 5층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/364864" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">카카오헬스케어</p>
-        <h2>Frontend Engineer</h2>
-        <div class="meta">
-          <span>경기 경기도 성남시 분당구 판교역로 166, 카카오판교아지트 B동 5층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/363847" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">고위드</p>
-        <h2>Product Engineer (프로덕트 엔지니어)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 도산대로 317, 14, 15층</span>
-          <span>경력 4~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/363495" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">고위드</p>
-        <h2>Frontend Engineer (프론트엔드 엔지니어)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 도산대로 317, 14, 15층</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/363290" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">바인드</p>
-        <h2>[애슬러] Front-end Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 선릉로 652, 3층</span>
-          <span>경력 6~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/363174" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">인티그레이션(메디스트림)</p>
-        <h2>[AX] Product Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로 427, 위워크 선릉 2호점</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/363150" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">매도왕</p>
-        <h2>풀스택 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 강남대로 381, 406호</span>
-          <span>경력 2~19년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/362769" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">컬리</p>
-        <h2>커머스 시니어 프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 테헤란로 133</span>
+          <span>서울 서울 영등포구 국제금융로8길 2 농협문화복지재단 14층 (여의도동)</span>
           <span>경력 8~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 89%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/361793" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Vue</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/378890" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">헤렌</p>
-        <h2>[헤렌/공비서] 시니어 프론트엔드 개발자 (7년차 ~)</h2>
-        <div class="meta">
-          <span>서울 서울 성동구 성수일로 8길 5, SK V1 타워 A동 302~5호</span>
-          <span>경력 7~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/361706" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">로아이</p>
-        <h2>Senior Frontend Engineer (React.js)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로26길 14</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/361516" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">인터엑스</p>
-        <h2>프론트엔드 (Front-end) 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 금천구 가산디지털1로 171 가산SKV1 센터 1001호</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/361323" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">스파크플러스 (SPARKPLUS)</p>
-        <h2>Full Stack Developer</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 테헤란로 201, 아주빌딩 2층(역삼동)</span>
-          <span>경력 6~15년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/361232" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">페칭</p>
-        <h2>글로벌 패션 디자이너 커머스 시니어 풀스택 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 성동구 성수이로22길 37, 서울창업허브 성수 308A</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/360959" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
+        <div class="badges"><span class="recommend-label">추천</span></div>
         <p class="company">일루니</p>
         <h2>시니어 프론트엔드 개발자</h2>
         <div class="meta">
@@ -1348,246 +101,59 @@
           <span>경력 5~11년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 89%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">WebGL</span><span class="tech-tag">Three.js</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
         <a href="https://www.wanted.co.kr/wd/360480" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">피닉스랩유한회사 서울지점</p>
-        <h2>Senior Frontend Engineer (Seoul)</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">인이지</p>
+        <h2>프론트엔드 개발자(선임~책임급)</h2>
         <div class="meta">
-          <span>서울 서울 강남구 테헤란로5길 7, 위워크 강남 2호점 8층 117호</span>
-          <span>경력 4~10년</span>
+          <span>경기 경기도 성남시 분당구 성남대로331번길 8, 20층</span>
+          <span>경력 5~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 87%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/360451" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">데이터 시각화</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/374289" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">위펀(스낵24)</p>
-        <h2>프론트엔드 개발 (Frontend/React)</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 강남대로 374, 15층</span>
-          <span>경력 5~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/360129" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
+        <div class="badges"><span class="recommend-label">추천</span></div>
         <p class="company">컬리</p>
-        <h2>풀필먼트 시니어 프론트엔드 개발자</h2>
+        <h2>커머스 시니어 프론트엔드 개발자</h2>
         <div class="meta">
           <span>서울 서울특별시 강남구 테헤란로 133</span>
           <span>경력 8~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 87%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/359782" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/361793" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">파인더갭</p>
-        <h2>FrontEnd Engineer(4년 이상)</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">로아이</p>
+        <h2>Senior Frontend Engineer (React.js)</h2>
         <div class="meta">
-          <span>서울 서울 강남구 언주로 432-6</span>
-          <span>경력 4~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/358831" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">벙커키즈</p>
-        <h2>[위프(WHIF)] Tech - Frontend Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 논현로87길 19, 10층 BUNKERKIDS</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/356758" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">크로스이엔에프</p>
-        <h2>Frontend Developer</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 학동로7길 22 크로스이엔에프</span>
+          <span>서울 서울 강남구 테헤란로26길 14</span>
           <span>경력 5~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 87%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/356358" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">WebGL</span><span class="tech-tag">Three.js</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/361516" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">원프레딕트(onepredict)</p>
-        <h2>Full-stack 개발자 (고객사 상주)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 언주로125길 4, 1층 패스트파이브</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/356345" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">컬리</p>
-        <h2>핀테크 프론트엔드 개발자 (결제)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 테헤란로 133</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/356194" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">르몽</p>
-        <h2>[비즈몽] 프론트엔드(F/E) 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 양재대로12길 56, AI캠퍼스</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/354891" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">비전스페이스</p>
-        <h2>서비스 플랫폼 풀스택 개발자 2년 이상</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 도곡로3길 27, 10F</span>
-          <span>경력 2~20년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">플랫폼·시각화 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/353727" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">비전스페이스</p>
-        <h2>언리얼 개발자 3년 이상</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 도곡로3길 27, 10F</span>
-          <span>경력 3~20년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">지도·공간정보·관제 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/353726" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">스페이스비전에이아이</p>
-        <h2>Frontend Software Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 중구 다산로12길 3</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/351002" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">이지식스(MVL)</p>
-        <h2>[Blockchain] Backend Engineer</h2>
-        <div class="meta">
-          <span>서울 테헤란로20길 9 동궁빌딩 13층 </span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/350485" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">스탁키퍼 (뱅카우)</p>
-        <h2>프론트엔드 개발자(5년차 이상)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로 501, 2층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/349902" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">아보엠디코리아</p>
-        <h2>Senior Full-Stack Developer</h2>
-        <div class="meta">
-          <span>서울 강남구 역삼로 169. 명우빌딩 6층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/349826" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">마스오토</p>
-        <h2>Platform Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 역삼로17길 16</span>
-          <span>경력 2~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/349770" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">모티프테크놀로지스</p>
-        <h2>Applied AI Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 서초대로 396, 강남빌딩 19층</span>
-          <span>경력 0~15년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/349007" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">애쉬코어테크놀로지스</p>
-        <h2>Frontend Developer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 삼성동 170-3</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/348913" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
+        <div class="badges"><span class="recommend-label">추천</span></div>
         <p class="company">빅케어</p>
         <h2>플랫폼개발팀 시니어 프론트엔드</h2>
         <div class="meta">
@@ -1595,103 +161,59 @@
           <span>경력 10~100년</span>
           <span>2026-08-31 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 87%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
         <a href="https://www.wanted.co.kr/wd/348261" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">스캐터랩(Scatterlab)</p>
-        <h2>Frontend Engineer</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">라포랩스</p>
+        <h2>Frontend Chapter Leader</h2>
         <div class="meta">
-          <span>서울 서울시 성동구 왕십리로 125</span>
-          <span>경력 3~100년</span>
+          <span>서울 서울 강남구 테헤란로98길 8, KT&amp;G 코스모 대치타워</span>
+          <span>경력 7~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 85%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/347680" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/377521" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">딥노이드(Deepnoid)</p>
-        <h2>Frontend Engineer (React)</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">미소(miso)</p>
+        <h2>Front-end Chapter Lead</h2>
         <div class="meta">
-          <span>서울 서울 구로구 디지털로33길 48, 19층</span>
-          <span>경력 5~100년</span>
+          <span>서울 종로구 율곡로6 트윈트리타워 B동 5층</span>
+          <span>경력 7~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 85%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/346447" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/376695" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">씨제이이엔엠(CJ ENM)</p>
-        <h2>[Mnet Plus] Frontend Engineer</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">헤렌</p>
+        <h2>[헤렌/공비서] 시니어 프론트엔드 개발자 (7년차 ~)</h2>
         <div class="meta">
-          <span>서울 서울시 마포구 상암산로66 CJ ENM센터</span>
-          <span>경력 3~8년</span>
+          <span>서울 서울 성동구 성수일로 8길 5, SK V1 타워 A동 302~5호</span>
+          <span>경력 7~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 85%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/345906" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/361706" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">디스펙터</p>
-        <h2>풀스택 개발자</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 수정구 금토로 32, EAST 5층</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/343884" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">메라키플레이스</p>
-        <h2>Product Engineer(FE)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로 242, 패스트파이브 4층</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/342387" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">커넥트웨이브</p>
-        <h2>[Consumer Commerce] 프론트엔드개발자 (7년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 금천구 벚꽃로 298 대륭포스트6차 17층</span>
-          <span>경력 7~14년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/341130" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">메디콜</p>
-        <h2>[덴탈콜] Software Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 봉은사로1길 6, 5층</span>
-          <span>경력 2~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/341042" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
+        <div class="badges"><span class="recommend-label">추천</span></div>
         <p class="company">카카오페이증권(kakaopay증권)</p>
         <h2>FE코어팀 프론트엔드 개발자(시니어)</h2>
         <div class="meta">
@@ -1699,478 +221,132 @@
           <span>경력 5~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 85%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
         <a href="https://www.wanted.co.kr/wd/340473" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">피트</p>
-        <h2>Product Engineer (Frontend)</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">휴이노</p>
+        <h2>Front-end SWE</h2>
         <div class="meta">
-          <span>서울 서울 서초구 강남대로23길 87, 2층 피트</span>
+          <span>서울 서울시 강남구 압구정로 79길19, 3,4층</span>
           <span>경력 5~11년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 83%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/339232" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">실시간</span><span class="tech-tag">데이터 시각화</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/377066" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">디어니언</p>
-        <h2>Frontend Engineer</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">에프앤에프(F&amp;F)</p>
+        <h2>디지털본부 프론트엔드 개발 5년 이상</h2>
         <div class="meta">
-          <span>서울 서울 송파구 법원로11길 7, C동 514호</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/336499" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">이자</p>
-        <h2>프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 영등포구 의사당대로 83</span>
-          <span>경력 2~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/336062" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">두어스(ZVZO)</p>
-        <h2>AI Product Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 서초구 서초대로 398, 8층</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/335520" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">엔에이치엔링크</p>
-        <h2>클라이언트개발팀 FE개발 담당자</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 강남대로 586</span>
-          <span>경력 5~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/334027" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">씨디알아이(CDRI)</p>
-        <h2>프론트엔드 개발자 Lead</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로 518, 12층</span>
-          <span>경력 5~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/333190" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">네오랩컨버전스(NeoLab)</p>
-        <h2>백엔드 개발자 (5-15년)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 구로구 디지털로30길 28 마리오타워 15층</span>
+          <span>서울 서울 강남구 테헤란로8길 8, F&amp;F 빌딩</span>
           <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
+          <span>2026-08-31 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 83%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/330723" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span><span class="tech-tag">실시간</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/376981" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">리빌더에이아이(리빌더AI)</p>
-        <h2>웹 프런트엔드 개발자</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">링크알파(LinqAlpha)</p>
+        <h2>Frontend Engineer, AI Agent Product</h2>
         <div class="meta">
-          <span>경기 성남시 분당구 정자일로 95 네이버 1784</span>
-          <span>경력 3~10년</span>
+          <span>서울 서울 서초구 강남대로51길 1, 11층</span>
+          <span>경력 7~14년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 83%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/330377" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">실시간</span><span class="tech-tag">데이터 시각화</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/375849" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">니즈</p>
-        <h2>풀스택 개발자</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">키노라이츠</p>
+        <h2>프론트엔드 개발자(5년 이상)</h2>
         <div class="meta">
-          <span>서울 서울 종로구 종로 6, 5층 스타트업빌리지</span>
-          <span>경력 5~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/325797" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">페이타랩(패스오더)</p>
-        <h2>[병역특례] Backend Developer(산업기능요원/보충역/전직)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 영동대로 85길 34, 6층</span>
-          <span>경력 0~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/325722" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">42테이프</p>
-        <h2>프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>경기 경기 성남시 수정구 대왕판교로 815, 정보보호클러스터 459호</span>
-          <span>경력 4~9년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/324426" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">뤼튼테크놀로지스</p>
-        <h2>AX Frontend Engineer</h2>
-        <div class="meta">
-          <span>서울 서울특별시 서초구 서초대로77길 17, 14층</span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/313869" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">카카오페이증권(kakaopay증권)</p>
-        <h2>프론트엔드 개발자(시니어)</h2>
-        <div class="meta">
-          <span>경기 경기도 성남시 분당구 판교역로 166 카카오아지트</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/311372" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">뤼튼테크놀로지스</p>
-        <h2>Frontend Engineer</h2>
-        <div class="meta">
-          <span>서울 서울특별시 서초구 서초대로77길 17, 14층</span>
-          <span>경력 3~8년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/307461" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">비마이프렌즈</p>
-        <h2>Front-end Developer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로14길 16, 7층, 8층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/305712" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">그린재킷</p>
-        <h2>프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 도산대로 176 </span>
-          <span>경력 3~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/299746" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">베이글코드(Bagelcode)</p>
-        <h2>[Platform] 프론트엔드 웹 개발</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 테헤란로328 (역삼동 708-1) 동우빌딩 16층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/298925" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">엔닷라이트</p>
-        <h2>Fullstack Engineer</h2>
-        <div class="meta">
-          <span>경기 경기도 성남시 분당구 성남대로 331번길 8, 킨스타워 1802호</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/293103" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">두부</p>
-        <h2>Product Engineer (Full Stack)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 역삼로3길 11, 본관 4층</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/291146" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">제논</p>
-        <h2>풀스택_FDE(Forward Deployed Engineer)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 남부순환로 2621 플래그원 13층</span>
-          <span>경력 5~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/289537" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">아이헤이트플라잉버그스</p>
-        <h2>프론트엔드 개발자 (5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울특별시 영등포구 여의대로 108 파크원 타워1, 38-39층</span>
-          <span>경력 5~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/289347" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">인티그레이션(메디스트림)</p>
-        <h2>린다이어트 프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울특별시 강남구 테헤란로 427 위워크타워 선릉 2호점 2층</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/288127" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">폴센트</p>
-        <h2>Senior Developer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로 124, 3층 301호</span>
-          <span>경력 5~20년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/264329" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">사이오닉에이아이</p>
-        <h2>Frontend Developer (5년 이상)</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 남부순환로359길 29, 사이오닉에이아이</span>
-          <span>경력 5~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/261774" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">액트노바</p>
-        <h2>Next.js 프론트엔드 개발자</h2>
-        <div class="meta">
-          <span>서울 서울특별시 송파구 올림픽로 240 롯데웰빙센터 잠실 스파크플러스 232호</span>
-          <span>경력 2~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/246909" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">에버트레져</p>
-        <h2>[예투] 풀스택 개발자 (Full-Stack Engineer)</h2>
-        <div class="meta">
-          <span>서울 서울 영등포구 의사당대로 83, 서울핀테크랩 5층 119호</span>
-          <span>경력 5~11년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/245815" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">패스트레인(여신티켓)</p>
-        <h2>프론트엔드 개발자(7년 이상)</h2>
-        <div class="meta">
-          <span>서울 강남구 테헤란로 423 현대타워 10층</span>
-          <span>경력 7~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/237526" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">개념원리</p>
-        <h2>Front-End 개발자</h2>
-        <div class="meta">
-          <span>서울 서울시 강남구 테헤란로8길 37 한동빌딩 6,7층</span>
-          <span>경력 3~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/223579" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">채널코퍼레이션</p>
-        <h2>[채널톡] Software Engineer</h2>
-        <div class="meta">
-          <span>서울 강남구 논현로 508, GS강남타워</span>
-          <span>경력 0~10년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/222071" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">펄슨</p>
-        <h2>Senior Full Stack Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 테헤란로 409, 동신빌딩</span>
+          <span>서울 서울 강남구 테헤란로2길 27, 12층</span>
           <span>경력 5~15년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 83%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/215172" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Vue</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/372415" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">이디피랩</p>
-        <h2>풀스택 개발팀장</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">아르템코퍼레이션</p>
+        <h2>프론트엔드 개발자 (Frontend Developer)</h2>
         <div class="meta">
-          <span>서울 종로구 종로6 광화문우체국 5층 서울창조경제혁신센터</span>
-          <span>경력 10~15년</span>
-          <span>상시 또는 채용 시 마감</span>
+          <span>서울 서울 서초구 사임당로8길 13</span>
+          <span>경력 3~100년</span>
+          <span>2026-09-30 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 83%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/212945" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Vue</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/372133" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">아인잡(AINJOB)</p>
-        <h2>[기업부설 연구소] WEB/APP Front 개발 리더 (4년 이상)</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">사이오닉에이아이</p>
+        <h2>Frontend Developer (3년 이상)</h2>
         <div class="meta">
-          <span>서울 강남구 강남대로 310 유니온센터 </span>
-          <span>경력 4~10년</span>
+          <span>서울 서울 강남구 남부순환로359길 29, 사이오닉에이아이</span>
+          <span>경력 3~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 83%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/193805" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">실시간</span><span class="tech-tag">데이터 시각화</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/369391" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">선데이띵커</p>
-        <h2>[판다랭크] 풀스택 Nodejs 개발자</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">카카오헬스케어</p>
+        <h2>Frontend Engineer</h2>
         <div class="meta">
-          <span>서울 서울시 마포대로 53길 A동 2412호</span>
-          <span>경력 1~10년</span>
+          <span>경기 경기도 성남시 분당구 판교역로 166, 카카오판교아지트 B동 5층</span>
+          <span>경력 5~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 83%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/159691" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">실시간</span><span class="tech-tag">데이터 시각화</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/363847" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article>
       <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">누아</p>
-        <h2>프론트엔드 개발자</h2>
+        <div class="badges"><span class="recommend-label">추천</span></div>
+        <p class="company">레브잇</p>
+        <h2>Sr. Software Engineer (Frontend)</h2>
         <div class="meta">
-          <span>서울 서울특별시 중구 세종대로 136, SFC 8층</span>
-          <span>경력 3~12년</span>
+          <span>서울 서울 관악구 남부순환로 1836, 7층, 8층</span>
+          <span>경력 7~100년</span>
           <span>상시 또는 채용 시 마감</span>
           <span>출처: 원티드</span>
+          <span>직무 적합도 83%</span>
         </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/118906" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">그립랩스</p>
-        <h2>Full-Stack Engineer</h2>
-        <div class="meta">
-          <span>서울 서울 영등포구 국회대로70길 23, 7층</span>
-          <span>경력 5~9년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/90260" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="job-card">
-        <p class="recommend-label">추천</p>
-        <p class="company">전능아이티</p>
-        <h2>[Smartdoctor] 산업기능요원(보충역) 개발자</h2>
-        <div class="meta">
-          <span>서울 서울 강남구 역삼로3길 11, 5층(광성빌딩, 본관)</span>
-          <span>경력 0~100년</span>
-          <span>상시 또는 채용 시 마감</span>
-          <span>출처: 원티드</span>
-        </div>
-        <p class="reason">프론트엔드·공간정보 경험과 일치</p>
-        <a href="https://www.wanted.co.kr/wd/75585" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Vue</span></div>
+        <p class="reason">프론트엔드 경험과 일치</p>
+        <a href="https://www.wanted.co.kr/wd/339834" target="_blank" rel="noopener noreferrer">채용공고 확인하기 <span aria-hidden="true">↗</span></a>
       </article></main>
-  <footer><p>마지막 확인: 2026년 08월 06일 16:53</p><p>지원 전 원문에서 접수 상태와 조건을 다시 확인하세요.</p></footer>
+  <footer><p>마지막 확인: 2026년 08월 07일 08:23</p><p>지원 전 원문에서 접수 상태와 조건을 다시 확인하세요.</p></footer>
 </body>
 </html>
