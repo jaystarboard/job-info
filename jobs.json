@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-09T23:19:16.493539+00:00",
+  "checked_at": "2026-08-10T23:19:34.197866+00:00",
   "active_match_count": 20,
   "new_match_count": 20,
   "priority_companies": [
@@ -243,25 +243,6 @@
       "fit_score": 85
     },
     {
-      "id": 377066,
-      "company": "휴이노",
-      "position": "Front-end SWE",
-      "location": "서울 서울시 강남구 압구정로 79길19, 3,4층",
-      "annual_from": 5,
-      "annual_to": 11,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/377066",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "실시간",
-        "데이터 시각화"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
       "id": 376981,
       "company": "에프앤에프(F&F)",
       "position": "디지털본부 프론트엔드 개발 5년 이상",
@@ -357,25 +338,6 @@
       "fit_score": 83
     },
     {
-      "id": 363847,
-      "company": "카카오헬스케어",
-      "position": "Frontend Engineer",
-      "location": "경기 경기도 성남시 분당구 판교역로 166, 카카오판교아지트 B동 5층",
-      "annual_from": 5,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/363847",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "실시간",
-        "데이터 시각화"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
       "id": 339834,
       "company": "레브잇",
       "position": "Sr. Software Engineer (Frontend)",
@@ -390,6 +352,44 @@
         "TypeScript",
         "JavaScript",
         "Vue"
+      ],
+      "spatial": false,
+      "fit_score": 83
+    },
+    {
+      "id": 299746,
+      "company": "그린재킷",
+      "position": "프론트엔드 개발자",
+      "location": "서울 서울시 강남구 도산대로 176 ",
+      "annual_from": 3,
+      "annual_to": 100,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/299746",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Vue"
+      ],
+      "spatial": false,
+      "fit_score": 83
+    },
+    {
+      "id": 289347,
+      "company": "아이헤이트플라잉버그스",
+      "position": "프론트엔드 개발자 (5년 이상)",
+      "location": "서울 서울특별시 영등포구 여의대로 108 파크원 타워1, 38-39층",
+      "annual_from": 5,
+      "annual_to": 100,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/289347",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "실시간"
       ],
       "spatial": false,
       "fit_score": 83
