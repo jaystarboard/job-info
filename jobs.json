@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-10T23:19:34.197866+00:00",
+  "checked_at": "2026-08-11T23:13:46.592117+00:00",
   "active_match_count": 20,
   "new_match_count": 20,
   "priority_companies": [
@@ -243,6 +243,44 @@
       "fit_score": 85
     },
     {
+      "id": 380142,
+      "company": "씨제이이엔엠(CJ ENM)",
+      "position": "[Mnet Plus] Frontend Engineer",
+      "location": "서울 서울시 마포구 상암산로66 CJ ENM센터",
+      "annual_from": 5,
+      "annual_to": 11,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/380142",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "실시간"
+      ],
+      "spatial": false,
+      "fit_score": 83
+    },
+    {
+      "id": 379950,
+      "company": "베이글랩스",
+      "position": "웹 프론트엔드 개발자",
+      "location": "서울 서울 서초구 신반포로 308, 1층",
+      "annual_from": 3,
+      "annual_to": 100,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/379950",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 83
+    },
+    {
       "id": 376981,
       "company": "에프앤에프(F&F)",
       "position": "디지털본부 프론트엔드 개발 5년 이상",
@@ -352,44 +390,6 @@
         "TypeScript",
         "JavaScript",
         "Vue"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
-      "id": 299746,
-      "company": "그린재킷",
-      "position": "프론트엔드 개발자",
-      "location": "서울 서울시 강남구 도산대로 176 ",
-      "annual_from": 3,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/299746",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "Vue"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
-      "id": 289347,
-      "company": "아이헤이트플라잉버그스",
-      "position": "프론트엔드 개발자 (5년 이상)",
-      "location": "서울 서울특별시 영등포구 여의대로 108 파크원 타워1, 38-39층",
-      "annual_from": 5,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/289347",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "실시간"
       ],
       "spatial": false,
       "fit_score": 83
