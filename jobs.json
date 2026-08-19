@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-18T23:07:50.806039+00:00",
+  "checked_at": "2026-08-19T00:48:14.801279+00:00",
   "active_match_count": 20,
-  "new_match_count": 20,
+  "new_match_count": 9,
   "priority_companies": [
     "SIA",
     "에스아이에이",
@@ -22,7 +22,27 @@
     "지오투정보기술",
     "유비파이"
   ],
-  "jobs": [
+  "active_jobs": [
+    {
+      "id": 377326,
+      "company": "바딧",
+      "position": "시니어 프론트엔드 개발자 (5년 이상)",
+      "location": "서울 서울특별시 금천구 가산디지털1로 25 대륭테크노타운17차 906-2호",
+      "annual_from": 5,
+      "annual_to": 100,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/377326",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "실시간",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 100
+    },
     {
       "id": 373485,
       "company": "유모스원",
@@ -45,14 +65,143 @@
       "fit_score": 100
     },
     {
-      "id": 377326,
-      "company": "바딧",
-      "position": "시니어 프론트엔드 개발자 (5년 이상)",
-      "location": "서울 서울특별시 금천구 가산디지털1로 25 대륭테크노타운17차 906-2호",
+      "id": 360480,
+      "company": "일루니",
+      "position": "시니어 프론트엔드 개발자",
+      "location": "서울 서울 서초구 효령로31길 10, 4층",
+      "annual_from": 5,
+      "annual_to": 11,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/360480",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "WebGL",
+        "Three.js"
+      ],
+      "spatial": false,
+      "fit_score": 100
+    },
+    {
+      "id": 229818,
+      "company": "엘리스",
+      "position": "시니어 프론트엔드 엔지니어",
+      "location": "서울 서울 강남구 테헤란로 445, 본솔빌딩 5~9층",
+      "annual_from": 5,
+      "annual_to": 15,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/229818",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "실시간",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 100
+    },
+    {
+      "id": 374289,
+      "company": "인이지",
+      "position": "프론트엔드 개발자(선임~책임급)",
+      "location": "경기 경기도 성남시 분당구 성남대로331번길 8, 20층",
       "annual_from": 5,
       "annual_to": 100,
       "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/377326",
+      "url": "https://www.wanted.co.kr/wd/374289",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 99
+    },
+    {
+      "id": 361516,
+      "company": "로아이",
+      "position": "Senior Frontend Engineer (React.js)",
+      "location": "서울 서울 강남구 테헤란로26길 14",
+      "annual_from": 5,
+      "annual_to": 100,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/361516",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "WebGL",
+        "Three.js"
+      ],
+      "spatial": false,
+      "fit_score": 99
+    },
+    {
+      "id": 379950,
+      "company": "베이글랩스",
+      "position": "웹 프론트엔드 개발자",
+      "location": "서울 서울 서초구 신반포로 308, 1층",
+      "annual_from": 3,
+      "annual_to": 100,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/379950",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 95
+    },
+    {
+      "id": 378192,
+      "company": "스탯",
+      "position": "Product Engineer (Frontend)",
+      "location": "서울 서울 강남구 언주로 622, 패스트파이브 3층",
+      "annual_from": 3,
+      "annual_to": 100,
+      "due_time": "2026-09-29",
+      "url": "https://www.wanted.co.kr/wd/378192",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 93
+    },
+    {
+      "id": 363913,
+      "company": "아이벡스",
+      "position": "Frontend Engineer (MLOps, Vision AI Platform)",
+      "location": "서울 서울특별시 서초구 남부순환로356길 89(서초구 양재동 17-8)",
+      "annual_from": 5,
+      "annual_to": 100,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/363913",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 93
+    },
+    {
+      "id": 336499,
+      "company": "디어니언",
+      "position": "Frontend Engineer",
+      "location": "서울 서울 송파구 법원로11길 7, C동 514호",
+      "annual_from": 3,
+      "annual_to": 8,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/336499",
       "reason": "프론트엔드 경험과 일치",
       "tech_stack": [
         "React",
@@ -62,7 +211,67 @@
         "데이터 시각화"
       ],
       "spatial": false,
-      "fit_score": 91
+      "fit_score": 92
+    },
+    {
+      "id": 334027,
+      "company": "엔에이치엔링크",
+      "position": "클라이언트개발팀 FE개발 담당자",
+      "location": "서울 서울 강남구 강남대로 586",
+      "annual_from": 5,
+      "annual_to": 10,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/334027",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Vue",
+        "WebGL",
+        "Three.js",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 92
+    },
+    {
+      "id": 374401,
+      "company": "쿤텍",
+      "position": "[NS사업그룹] 사이버 보안 프론트엔드 개발자 3~10년",
+      "location": "경기 경기 성남시 수정구 창업로 54, LH기업성장센터 가동 609호",
+      "annual_from": 3,
+      "annual_to": 10,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/374401",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "실시간",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 90
+    },
+    {
+      "id": 351002,
+      "company": "스페이스비전에이아이",
+      "position": "Frontend Software Engineer",
+      "location": "서울 서울 중구 다산로12길 3",
+      "annual_from": 3,
+      "annual_to": 10,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/351002",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "실시간",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 90
     },
     {
       "id": 378890,
@@ -84,38 +293,37 @@
       "fit_score": 89
     },
     {
-      "id": 360480,
-      "company": "일루니",
-      "position": "시니어 프론트엔드 개발자",
-      "location": "서울 서울 서초구 효령로31길 10, 4층",
-      "annual_from": 5,
-      "annual_to": 11,
+      "id": 379529,
+      "company": "웨이브덱",
+      "position": "프론트엔드 개발자 (3년 이상)",
+      "location": "서울 서울 영등포구 당산로 92, 3층",
+      "annual_from": 3,
+      "annual_to": 8,
       "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/360480",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "WebGL",
-        "Three.js"
-      ],
-      "spatial": false,
-      "fit_score": 89
-    },
-    {
-      "id": 374289,
-      "company": "인이지",
-      "position": "프론트엔드 개발자(선임~책임급)",
-      "location": "경기 경기도 성남시 분당구 성남대로331번길 8, 20층",
-      "annual_from": 5,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/374289",
+      "url": "https://www.wanted.co.kr/wd/379529",
       "reason": "프론트엔드 경험과 일치",
       "tech_stack": [
         "React",
         "TypeScript",
         "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 88
+    },
+    {
+      "id": 377272,
+      "company": "큐피스트(글램)",
+      "position": "소프트웨어 엔지니어(프런트엔드 플랫폼 리드)",
+      "location": "서울 서울특별시 강남구 테헤란로 146 현익빌딩 11층",
+      "annual_from": 8,
+      "annual_to": 16,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/377272",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "실시간"
       ],
       "spatial": false,
       "fit_score": 87
@@ -134,24 +342,6 @@
         "React",
         "TypeScript",
         "JavaScript"
-      ],
-      "spatial": false,
-      "fit_score": 87
-    },
-    {
-      "id": 361516,
-      "company": "로아이",
-      "position": "Senior Frontend Engineer (React.js)",
-      "location": "서울 서울 강남구 테헤란로26길 14",
-      "annual_from": 5,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/361516",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "WebGL",
-        "Three.js"
       ],
       "spatial": false,
       "fit_score": 87
@@ -207,107 +397,18 @@
       ],
       "spatial": false,
       "fit_score": 85
-    },
+    }
+  ],
+  "jobs": [
     {
-      "id": 361706,
-      "company": "헤렌",
-      "position": "[헤렌/공비서] 시니어 프론트엔드 개발자 (7년차 ~)",
-      "location": "서울 서울 성동구 성수일로 8길 5, SK V1 타워 A동 302~5호",
-      "annual_from": 7,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/361706",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript"
-      ],
-      "spatial": false,
-      "fit_score": 85
-    },
-    {
-      "id": 340473,
-      "company": "카카오페이증권(kakaopay증권)",
-      "position": "FE코어팀 프론트엔드 개발자(시니어)",
-      "location": "경기 경기도 성남시 분당구 판교역로 166 카카오아지트",
+      "id": 229818,
+      "company": "엘리스",
+      "position": "시니어 프론트엔드 엔지니어",
+      "location": "서울 서울 강남구 테헤란로 445, 본솔빌딩 5~9층",
       "annual_from": 5,
-      "annual_to": 100,
+      "annual_to": 15,
       "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/340473",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript"
-      ],
-      "spatial": false,
-      "fit_score": 85
-    },
-    {
-      "id": 380142,
-      "company": "씨제이이엔엠(CJ ENM)",
-      "position": "[Mnet Plus] Frontend Engineer",
-      "location": "서울 서울시 마포구 상암산로66 CJ ENM센터",
-      "annual_from": 5,
-      "annual_to": 11,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/380142",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "실시간"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
-      "id": 379950,
-      "company": "베이글랩스",
-      "position": "웹 프론트엔드 개발자",
-      "location": "서울 서울 서초구 신반포로 308, 1층",
-      "annual_from": 3,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/379950",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "데이터 시각화"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
-      "id": 376981,
-      "company": "에프앤에프(F&F)",
-      "position": "디지털본부 프론트엔드 개발 5년 이상",
-      "location": "서울 서울 강남구 테헤란로8길 8, F&F 빌딩",
-      "annual_from": 5,
-      "annual_to": 100,
-      "due_time": "2026-08-31",
-      "url": "https://www.wanted.co.kr/wd/376981",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "실시간"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
-      "id": 375849,
-      "company": "링크알파(LinqAlpha)",
-      "position": "Frontend Engineer, AI Agent Product",
-      "location": "서울 서울 서초구 강남대로51길 1, 11층",
-      "annual_from": 7,
-      "annual_to": 14,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/375849",
+      "url": "https://www.wanted.co.kr/wd/229818",
       "reason": "프론트엔드 경험과 일치",
       "tech_stack": [
         "React",
@@ -316,83 +417,159 @@
         "데이터 시각화"
       ],
       "spatial": false,
-      "fit_score": 83
+      "fit_score": 100
     },
     {
-      "id": 372133,
-      "company": "아르템코퍼레이션",
-      "position": "프론트엔드 개발자 (Frontend Developer)",
-      "location": "서울 서울 서초구 사임당로8길 13",
+      "id": 378192,
+      "company": "스탯",
+      "position": "Product Engineer (Frontend)",
+      "location": "서울 서울 강남구 언주로 622, 패스트파이브 3층",
       "annual_from": 3,
       "annual_to": 100,
-      "due_time": "2026-09-30",
-      "url": "https://www.wanted.co.kr/wd/372133",
+      "due_time": "2026-09-29",
+      "url": "https://www.wanted.co.kr/wd/378192",
       "reason": "프론트엔드 경험과 일치",
       "tech_stack": [
         "React",
         "TypeScript",
-        "JavaScript",
-        "Vue"
+        "데이터 시각화"
       ],
       "spatial": false,
-      "fit_score": 83
+      "fit_score": 93
     },
     {
-      "id": 339834,
-      "company": "레브잇",
-      "position": "Sr. Software Engineer (Frontend)",
-      "location": "서울 서울 관악구 남부순환로 1836, 7층, 8층",
-      "annual_from": 7,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/339834",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "Vue"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
-      "id": 299746,
-      "company": "그린재킷",
-      "position": "프론트엔드 개발자",
-      "location": "서울 서울시 강남구 도산대로 176 ",
-      "annual_from": 3,
-      "annual_to": 100,
-      "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/299746",
-      "reason": "프론트엔드 경험과 일치",
-      "tech_stack": [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "Vue"
-      ],
-      "spatial": false,
-      "fit_score": 83
-    },
-    {
-      "id": 289347,
-      "company": "아이헤이트플라잉버그스",
-      "position": "프론트엔드 개발자 (5년 이상)",
-      "location": "서울 서울특별시 영등포구 여의대로 108 파크원 타워1, 38-39층",
+      "id": 363913,
+      "company": "아이벡스",
+      "position": "Frontend Engineer (MLOps, Vision AI Platform)",
+      "location": "서울 서울특별시 서초구 남부순환로356길 89(서초구 양재동 17-8)",
       "annual_from": 5,
       "annual_to": 100,
       "due_time": null,
-      "url": "https://www.wanted.co.kr/wd/289347",
+      "url": "https://www.wanted.co.kr/wd/363913",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 93
+    },
+    {
+      "id": 336499,
+      "company": "디어니언",
+      "position": "Frontend Engineer",
+      "location": "서울 서울 송파구 법원로11길 7, C동 514호",
+      "annual_from": 3,
+      "annual_to": 8,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/336499",
       "reason": "프론트엔드 경험과 일치",
       "tech_stack": [
         "React",
         "TypeScript",
         "JavaScript",
+        "실시간",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 92
+    },
+    {
+      "id": 334027,
+      "company": "엔에이치엔링크",
+      "position": "클라이언트개발팀 FE개발 담당자",
+      "location": "서울 서울 강남구 강남대로 586",
+      "annual_from": 5,
+      "annual_to": 10,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/334027",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Vue",
+        "WebGL",
+        "Three.js",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 92
+    },
+    {
+      "id": 374401,
+      "company": "쿤텍",
+      "position": "[NS사업그룹] 사이버 보안 프론트엔드 개발자 3~10년",
+      "location": "경기 경기 성남시 수정구 창업로 54, LH기업성장센터 가동 609호",
+      "annual_from": 3,
+      "annual_to": 10,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/374401",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "실시간",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 90
+    },
+    {
+      "id": 351002,
+      "company": "스페이스비전에이아이",
+      "position": "Frontend Software Engineer",
+      "location": "서울 서울 중구 다산로12길 3",
+      "annual_from": 3,
+      "annual_to": 10,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/351002",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "실시간",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 90
+    },
+    {
+      "id": 379529,
+      "company": "웨이브덱",
+      "position": "프론트엔드 개발자 (3년 이상)",
+      "location": "서울 서울 영등포구 당산로 92, 3층",
+      "annual_from": 3,
+      "annual_to": 8,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/379529",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
+        "데이터 시각화"
+      ],
+      "spatial": false,
+      "fit_score": 88
+    },
+    {
+      "id": 377272,
+      "company": "큐피스트(글램)",
+      "position": "소프트웨어 엔지니어(프런트엔드 플랫폼 리드)",
+      "location": "서울 서울특별시 강남구 테헤란로 146 현익빌딩 11층",
+      "annual_from": 8,
+      "annual_to": 16,
+      "due_time": null,
+      "url": "https://www.wanted.co.kr/wd/377272",
+      "reason": "프론트엔드 경험과 일치",
+      "tech_stack": [
+        "React",
+        "TypeScript",
         "실시간"
       ],
       "spatial": false,
-      "fit_score": 83
+      "fit_score": 87
     }
   ]
 }
