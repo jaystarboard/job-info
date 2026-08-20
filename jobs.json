@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-08-19T22:01:46.894156+00:00",
-  "active_match_count": 10,
-  "new_match_count": 9,
+  "checked_at": "2026-08-20T22:02:32.144175+00:00",
+  "active_match_count": 11,
+  "new_match_count": 1,
   "priority_companies": [
     "SIA",
     "에스아이에이",
@@ -193,6 +193,20 @@
       ],
       "spatial": false,
       "fit_score": 87
+    },
+    {
+      "id": 147960159933289004,
+      "company": "국비지원IT취업교육",
+      "position": "[국비지원IT취업교육]인공지능/풀스택/웹앱/JAVA파이썬/프론트엔드/백엔드/빅데이터 외 취업과정",
+      "location": "서울",
+      "annual_from": null,
+      "annual_to": null,
+      "due_time": null,
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49796620?rPageCode=AM&logpath=20&sn=1&sc=524",
+      "reason": "프론트엔드·플랫폼 직무 조건 일치",
+      "tech_stack": [],
+      "spatial": false,
+      "fit_score": 70
     },
     {
       "id": 6036236092019275,
