@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-09T23:31:43.009426+00:00",
-  "active_match_count": 11,
-  "new_match_count": 0,
+  "checked_at": "2026-09-10T23:25:21.181867+00:00",
+  "active_match_count": 12,
+  "new_match_count": 1,
   "priority_companies": [
     "SIA",
     "에스아이에이",
@@ -221,6 +221,20 @@
       "tech_stack": [],
       "spatial": false,
       "fit_score": 70
+    },
+    {
+      "id": 874971143030657813,
+      "company": "직전연봉인상/밴츠",
+      "position": "[직전연봉인상/밴츠] 한성자동차 Power Platform 개발자",
+      "location": "서울",
+      "annual_from": null,
+      "annual_to": null,
+      "due_time": null,
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=54985395",
+      "reason": "프론트엔드·플랫폼 직무 조건 일치",
+      "tech_stack": [],
+      "spatial": false,
+      "fit_score": 59
     }
   ]
 }
